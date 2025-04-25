@@ -12,10 +12,10 @@ const VideoCard = ({ video }: any) => {
                 <Link
                     href={`/v/${video.file_code}#${video.title}`}
                     title={`Watch ${video.title}`}
+                    target="blank"
                     >
                 <Thumbnail
-                    single_img={video.single_img}
-                    splash_img={video.splash_img}
+                    thumbnail={video.thumbnail}
                     title={video.title}
                 />
                 </Link>
